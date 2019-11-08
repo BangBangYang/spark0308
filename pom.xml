@@ -13,6 +13,7 @@
         <module>sparkStreaming</module>
         <module>sparkOperatrerHbase</module>
         <module>test</module>
+        <module>sparkSQL</module>
     </modules>
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.apache.spark/spark-core -->
