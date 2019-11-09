@@ -25,6 +25,9 @@ object SparkSql_transform {
     rdd2.foreach(row => {
       println(row.getString(1))
     })
+
+    spark.stop()
+    sc.stop()
   }
 
 
