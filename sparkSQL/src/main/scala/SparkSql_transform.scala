@@ -25,7 +25,11 @@ object SparkSql_transform {
     rdd2.foreach(row => {
       println(row.getString(1))
     })
-
+    //6 rdd -> ds
+    val userRDD = rdd.map {
+      case (id, name, age) => Person(id, name, age)
+    }
+    userRDD.toDS().show()
     spark.stop()
     sc.stop()
   }
