@@ -3,6 +3,7 @@ import org.apache.spark.sql.{Row, SparkSession}
 import org.apache.spark.sql.expressions.{MutableAggregationBuffer, UserDefinedAggregateFunction}
 import org.apache.spark.sql.types.{DataType, DoubleType, LongType, StructType}
 
+//弱类型UDAF
 class CustmoerAvg extends UserDefinedAggregateFunction{
 //函数输入时的数据结构
   override def inputSchema: StructType = {
